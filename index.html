@@ -3,9 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tiago Silva</title>
+    <title>WDD 131 – Fundamentos da Web Dinâmica - Tiago Silva</title>
+    <meta name="description" content="Página inicial de Tiago Lopes Silva e Silva desenvolvida para registrar o progresso e projetos no curso WDD 131 – Fundamentos da Web Dinâmica da BYU-Idaho">
+    <meta name="author" content="Tiago Lopes Silva e Silva">
+    <link rel="stylesheet" href="estilos/base.css">
+    <script src="scripts/obterdatas.js" defer></script>
 </head>
 <body>
-    <h1>Tiago Silva</h1>
+    <header>
+        <span id="titulo-curso">WDD131 – Fundamentos da Web Dinâmica</span>
+
+        <nav>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/123?lang=por&id=p17#p17">
+                Escritura Favorita
+            </a>
+            <a href="#">Projeto Final</a>
+        </nav>
+    </header>
+
+    <main>
+     <h1>Tiago Lopes Silva e Silva</h1>
+
+    <section class="card">
+        <h2>Sobre Mim</h2>
+
+        <img src="imagens/tiago.jpg" alt="Foto de Tiago Lopes Silva e Silva" width="200">
+
+        <p>
+            Meu nome é Tiago Lopes Silva e Silva. Sou estudante de
+            Desenvolvimento Web na BYU-Idaho e engenheiro de testes
+            de software. Tenho experiência com testes manuais e
+            automatizados de dispositivos móveis, como smartphones
+            e smartwatches. Estou aprendendo HTML, CSS e JavaScript
+            para aprimorar minhas habilidades em programação.
+        </p>
+
+        <h3>Brasil</h3>
+
+        <img src="imagens/bandeiradobrasil.jpg" alt="Bandeira do Brasil" width="200">
+
+        <p>
+            O Brasil é um país localizado na América do Sul,
+            conhecido por sua diversidade cultural, suas belezas
+            naturais e sua riqueza de recursos. Sou brasileiro
+            e amo meu país e minhas raízes.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Recursos Web Dev</h2>
+
+        <ul>
+            <li>
+                <a href="https://developer.mozilla.org/pt-BR/">
+                    MDN Web Docs
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.w3schools.com/">
+                    W3Schools
+                </a>
+            </li>
+
+            <li>
+                <a href="https://css-tricks.com/">
+                    CSS Tricks
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.freecodecamp.org/">
+                    freeCodeCamp
+                </a>
+            </li>
+
+            <li>
+                <a href="https://byupw.instructure.com/">
+                    BYU Canvas
+                </a>
+            </li>
+        </ul>
+    </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="anoatual"></span> 
+            Tiago Lopes Silva e Silva | Amazonas, Brasil
+        </p>
+
+        <p id="ultimaModificacao"></p>
+    </footer>
 </body>
 </html>
