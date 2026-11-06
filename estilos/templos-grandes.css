@@ -1,0 +1,62 @@
+
+/* -----------------------------------
+   TABLETS E TELAS MAIORES
+----------------------------------- */
+
+@media screen and (min-width: 768px) {
+
+    header {
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    /* Esconder botão hambúrguer */
+    .menu-toggle {
+        display: none;
+    }
+
+    /* Navegação horizontal */
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    nav a {
+        width: auto;
+        min-width: 100px;
+    }
+
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+
+    figure img {
+        height: 230px;
+    }
+}
+
+/* -----------------------------------
+   DESKTOP
+----------------------------------- */
+
+@media screen and (min-width: 1024px) {
+
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    figure img {
+        height: 250px;
+    }
+}
