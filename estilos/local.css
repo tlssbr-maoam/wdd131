@@ -1,5 +1,13 @@
 
 /* GENERAL SETTINGS */
+/* ROOT VARIABLES */
+
+:root {
+    --cor-vermelha: #d50032;
+    --cor-verde: #00843d;
+    --cor-texto: #222;
+    --cor-fundo: #fff;
+}
 
 * {
     margin: 0;
@@ -9,18 +17,18 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #222;
-    background-color: #fff;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
 }
 
 /* HEADER */
 
 header {
-    background-color: #d50032;
+    background-color: var(--cor-vermelha);
     color: #fff;
     text-align: center;
     padding: 1.5rem 1rem;
-    border-bottom: 1rem solid #00843d;
+    border-bottom: 1rem solid var(--cor-verde);
 }
 
 header h1 {
@@ -101,7 +109,7 @@ header h1 {
 /* FOOTER */
 
 footer {
-    background-color: #d50032;
+    background-color: var(--cor-vermelha);
     color: #fff;
     text-align: center;
     padding: 1.5rem 1rem;
@@ -111,4 +119,14 @@ footer {
 
 footer p {
     margin: 0.2rem 0;
+}
+/* PSEUDO-ELEMENT */
+
+.data h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--cor-verde);
+    margin: 0.8rem auto 0;
 }
